@@ -1,0 +1,39 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+<!-- 
+		<property name="connection.driver_class">
+	com.mysql.jdbc.Driver
+		</property>
+	
+			<property name="connection.url">jdbc:mysql://localhost:3306/irfan</property>
+			<property name="connection.username">root</property>
+			<property name="connection.password">9922</property>
+			<property name="hbm2ddl.auto">update</property>
+			<property name="show_sql">true</property>
+			<mapping class="org.javateam.model.vichel" />
+
+			<mapping class="org.javateam.model.twowheeler"></mapping>
+			<mapping class="org.javateam.model.fourwheeler"></mapping> -->
+			
+			
+			
+			
+			<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+<property name="connection.url">jdbc:mysql://localhost:3306/irfan</property>
+<property name="connection.username">root</property>
+<property name="connection.password">9922</property>
+<property name="hbm2ddl.auto">create</property>
+<property name="show_sql">true</property>
+<mapping class="org.javateam.model1.vichel"></mapping>
+<mapping class="org.javateam.model1.twowheeler"></mapping>
+<mapping class="org.javateam.model1.fourwheeler"></mapping>
+
+
+
+	</session-factory>
+</hibernate-configuration>

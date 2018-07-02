@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;coursr.java&apos; to &apos;HB_12_MANY_TO_MANY_MAPPING/src/org.javateam.model.demo&apos;&#x0D;&#x0A;- Original project: &apos;HB_12_MANY_TO_MANY_MAPPING&apos;&#x0D;&#x0A;- Destination element: &apos;HB_12_MANY_TO_MANY_MAPPING/src/org.javateam.model.demo&apos;&#x0D;&#x0A;- Original element: &apos;org.javateam.model.coursr.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;org.javateam.model.demo" element1="/src&lt;org.javateam.model{coursr.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1511263483517" units="1" version="1.0"/>
+</session>

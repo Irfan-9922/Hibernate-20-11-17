@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.ij.model&apos; to &apos;HB_17_CACHING/src&apos;&#x0D;&#x0A;- Original project: &apos;First_project&apos;&#x0D;&#x0A;- Destination element: &apos;HB_17_CACHING/src&apos;&#x0D;&#x0A;- Original element: &apos;First_project/src/com.ij.model&apos;" description="Copy package" destination="=HB_17_CACHING/src" element1="/src&lt;com.ij.model" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1511320051987" version="1.0"/>
+</session>

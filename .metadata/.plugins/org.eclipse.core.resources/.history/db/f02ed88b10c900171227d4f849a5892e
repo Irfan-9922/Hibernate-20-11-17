@@ -1,0 +1,40 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package com.ij;
+
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
+import javax.persistence.Column;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:6:47:00 am
+ *DATE:13-Nov-2017
+ *TAGS:
+ */
+@Entity
+@Table(name="Att_OVR")
+public class Att_Ovrride {
+	@Column(name="ID")
+	
+	private int id;
+	@Column(name="NAME")
+	private String name;
+    @AttributeOverrides({
+    	@AttributeOverride( name="city", column=@Column(name="OFFICE_ADDRESS")),
+    	@AttributeOverride(name="zipcode" , column=@Column(name="OFFICE_ZIPCODE"))
+    	                
+    	
+    })
+	private Adress OfficeAdress;
+    private Adress HomeAdress;
+	
+	
+}

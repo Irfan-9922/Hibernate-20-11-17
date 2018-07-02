@@ -1,0 +1,23 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam.test;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:2:01:44 am
+ *DATE:10-Jan-2018
+ *TAGS:
+ */
+public class StudentTest {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;user_details.java&apos; to &apos;HB_17_FILTER_CONCEPT/src/org.javateam.model&apos;&#x0D;&#x0A;- Original project: &apos;HB_16_HQL_RETRIVING_ALL_DATA_FROM_TABLE&apos;&#x0D;&#x0A;- Destination element: &apos;HB_17_FILTER_CONCEPT/src/org.javateam.model&apos;&#x0D;&#x0A;- Original element: &apos;org.javateam.model.user_details.java&apos;" description="Copy compilation unit" destination="=HB_17_FILTER_CONCEPT/src&lt;org.javateam.model" element1="/src&lt;org.javateam.model{user_details.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1511313649964" units="1" version="1.0"/>
+</session>

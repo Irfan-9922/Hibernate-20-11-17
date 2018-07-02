@@ -1,0 +1,40 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam.model;
+
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.cfg.Configuration;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:11:11:29 am DATE:23-Nov-2017 TAGS:
+ */
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Session ses = new Configuration().configure().buildSessionFactory().openSession();
+		ses.getTransaction().begin();
+
+		//get all the record form database insted of using table name use class name
+		
+		Query query = ses.createQuery("from user_details ");
+		
+		//query returns list of records and it gives its own list method
+		//we have to store all record inside a list
+		 List<user_details> listofuser= query.list();
+		 
+		 for(user_details s:listofuser){
+			 System.out.println(s);
+		 }
+		
+		
+		
+	}
+
+}

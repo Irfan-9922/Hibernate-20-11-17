@@ -1,0 +1,46 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam.model;
+
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.cfg.Configuration;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:11:11:29 am DATE:23-Nov-2017 TAGS:
+ */
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Session ses = new Configuration().configure().buildSessionFactory().openSession();
+		ses.getTransaction().begin();
+
+		Query query = ses.createQuery(" select username from user_details ");
+		query.setFirstResult(1);
+		query.setMaxResults(6);
+
+		List <String>l = query.list();
+   for(String g:l){
+		System.out.println(g);
+   }
+ System.out.println(query.getQueryString());
+String q= query.getQueryString().concat("where user_id <=20");
+System.out.println(q);
+
+Query q2=ses.createQuery(q);
+   System.out.println("==========================================");
+List<String > s=q2.list();
+for(String k:s){
+	System.out.println(s);
+}
+System.out.println("===============================================");
+ 
+	}
+
+}

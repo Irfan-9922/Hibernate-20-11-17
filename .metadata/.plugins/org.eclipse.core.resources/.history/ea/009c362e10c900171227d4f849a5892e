@@ -1,0 +1,54 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package com.ij;
+
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
+import javax.persistence.Column;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:6:47:00 am
+ *DATE:13-Nov-2017
+ *TAGS:
+ */
+@Entity
+@Table(name="Att_OVR")
+public class Att_Ovrride {
+	private int id;
+	private String name;
+	private Adress ad;
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Att_Ovrride [id=" + id + ", name=" + name + ", ad=" + ad + "]";
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Adress getAd() {
+		return ad;
+	}
+	public void setAd(Adress ad) {
+		this.ad = ad;
+	}
+	
+}

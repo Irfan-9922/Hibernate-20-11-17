@@ -1,0 +1,90 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam;
+
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:8:57:42 pm
+ *DATE:05-Dec-2017
+ *TAGS:
+ */
+@Entity
+public class Student {
+	
+	@Id @GeneratedValue
+private int studentId;
+private String studentName;
+/*
+ * Aderss is asociated with student so direct student is
+ * having its own minig but not a Adress;
+ * so we have to embed adress object to student by using anotation
+ * @Embedable(for class level) or @Embeded(on object level)
+ */
+@Embedded
+private Adress studentHomeAdress;
+/**
+ * @param studentId
+ * @param studentName
+ * @param studentHomeAdress
+ * @param studentScchoolAdress
+ */
+public Student(int studentId, String studentName, Adress studentHomeAdress, Adress studentScchoolAdress) {
+	super();
+	this.studentId = studentId;
+	this.studentName = studentName;
+	this.studentHomeAdress = studentHomeAdress;
+	this.studentScchoolAdress = studentScchoolAdress;
+}
+/**
+ * 
+ */
+public Student() {
+	super();
+	// TODO Auto-generated constructor stub
+}
+public int getStudentId() {
+	return studentId;
+}
+public void setStudentId(int studentId) {
+	this.studentId = studentId;
+}
+public String getStudentName() {
+	return studentName;
+}
+public void setStudentName(String studentName) {
+	this.studentName = studentName;
+}
+public Adress getStudentHomeAdress() {
+	return studentHomeAdress;
+}
+public void setStudentHomeAdress(Adress studentHomeAdress) {
+	this.studentHomeAdress = studentHomeAdress;
+}
+public Adress getStudentScchoolAdress() {
+	return studentScchoolAdress;
+}
+public void setStudentScchoolAdress(Adress studentScchoolAdress) {
+	this.studentScchoolAdress = studentScchoolAdress;
+}
+@AttributeOverrides(value = {
+		
+		@AttributeOverride(name="studentAreaZipcode",column = @Column (name = "STUD_SCH_ZIPCODE")),
+		@AttributeOverride(name="studentCity",column = @Column( name = "STUD_SCH_CITY")),
+		@AttributeOverride(name="StudentCountery",column=@Column(name="STUD_SCH_COUNTERY"))
+             })
+private Adress studentScchoolAdress;
+
+
+}
+

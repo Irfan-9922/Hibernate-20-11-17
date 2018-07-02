@@ -1,0 +1,33 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:3:08:52 am
+ *DATE:22-Nov-2017
+ *TAGS:
+ */
+@Entity
+@Table(name="user_details")
+public class user_details {
+	@Id @GeneratedValue
+	int id;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+
+}

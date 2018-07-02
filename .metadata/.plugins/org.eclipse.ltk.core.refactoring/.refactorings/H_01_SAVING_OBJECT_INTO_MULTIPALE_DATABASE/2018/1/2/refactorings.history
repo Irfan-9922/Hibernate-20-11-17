@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MySqlConfiguration.xml&apos; to &apos;H_03_SAVING_OBJECT_INTO_MYSQL/src&apos;&#x0D;&#x0A;- Original project: &apos;H_01_SAVING_OBJECT_INTO_MULTIPALE_DATABASE&apos;&#x0D;&#x0A;- Destination element: &apos;H_03_SAVING_OBJECT_INTO_MYSQL/src&apos;&#x0D;&#x0A;- Original element: &apos;MySqlConfiguration.xml&apos;" description="Copy file" destination="=H_03_SAVING_OBJECT_INTO_MYSQL/src" element1="src/MySqlConfiguration.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1515532330832" units="0" version="1.0"/>
+</session>

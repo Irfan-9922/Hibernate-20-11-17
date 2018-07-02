@@ -1,0 +1,58 @@
+/**@COPYRIGHTS ALL RIGHTS ARE RESERVED
+ * 
+ */
+package org.javateam.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+/**
+ * NAME:shaikh irfan
+ *
+ * TIME:3:08:52 am
+ *DATE:22-Nov-2017
+ *TAGS:
+ */
+@Entity
+@Table(name="user_details")
+public class user_details {
+	@Id @GeneratedValue
+	int user_id;
+	private String user_name;
+
+	public int getUser_id() {
+		return user_id;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "user_details [user_id=" + user_id + ", user_name=" + user_name + "]";
+	}
+
+	public void setUser_id(int user_id) {
+		this.user_id = user_id;
+	}
+
+	public String getUser_name() {
+		return user_name;
+	}
+
+	public void setUser_name(String user_name) {
+		this.user_name = user_name;
+	}
+
+	public int getId() {
+		return user_id;
+	}
+
+	public void setId(int id) {
+		this.user_id = id;
+	}
+	
+
+}
